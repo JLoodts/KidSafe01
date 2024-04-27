@@ -49,7 +49,8 @@ import com.jollylemming.kidsafe01.utils.LocaleUtils;
 import com.jollylemming.kidsafe01.utils.SharedPrefsUtils;
 import com.jollylemming.kidsafe01.utils.Validators;
 
-public class LoginActivity extends AppCompatActivity implements OnPasswordResetListener {
+//public class LoginActivity extends AppCompatActivity implements OnPasswordResetListener {
+public class LoginActivity extends AppCompatActivity {
 	private static final String TAG = "LoginActivityTAG";
 	private EditText txtLogInEmail;
 	private EditText txtLogInPassword;
@@ -68,10 +69,10 @@ public class LoginActivity extends AppCompatActivity implements OnPasswordResetL
 	private String passwordPrefs;
 	private boolean autoLoginPrefs;
 	
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+	/*	super.onCreate(savedInstanceState);
 		EdgeToEdge.enable(this);
 		setContentView(R.layout.activity_main);
 		ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -79,7 +80,8 @@ public class LoginActivity extends AppCompatActivity implements OnPasswordResetL
 			v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 			return insets;
 		});
-	/*	super.onCreate(savedInstanceState);
+	 */
+		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 		
 		fragmentManager = getSupportFragmentManager();
@@ -87,7 +89,7 @@ public class LoginActivity extends AppCompatActivity implements OnPasswordResetL
 		
 		
 		//FirebaseApp.initializeApp(this);
-		auth = FirebaseAuth.getInstance();
+	/*	auth = FirebaseAuth.getInstance();
 		firebaseDatabase = FirebaseDatabase.getInstance();
 		databaseReference = firebaseDatabase.getReference("users");
 		
@@ -163,9 +165,9 @@ public class LoginActivity extends AppCompatActivity implements OnPasswordResetL
 	 */
 	}
 	
-	@Override
+		/*@Override
 	protected void onStart() {
-		/*
+
 		super.onStart();
 		if (autoLoginPrefs) {
 			if (Validators.isInternetAvailable(this)) {
@@ -178,7 +180,7 @@ public class LoginActivity extends AppCompatActivity implements OnPasswordResetL
 				startInformationDialogFragment(getResources().getString(R.string.you_re_offline_ncheck_your_connection_and_try_again));
 		}
 
-		 */
+
 	}
 	
 	
@@ -188,7 +190,7 @@ public class LoginActivity extends AppCompatActivity implements OnPasswordResetL
 		SharedPrefsUtils.setStringPreference(this, Constant.PASSWORD, txtLogInPassword.getText().toString());
 		
 	}
-	
+
 	private void login(String email, String password) {
 		if (isValid()) {
 			final LoadingDialogFragment loadingDialogFragment = new LoadingDialogFragment();
@@ -313,10 +315,10 @@ public class LoginActivity extends AppCompatActivity implements OnPasswordResetL
 	private void startModeSelectionActivity() {
 		Intent intent = new Intent(this, ModeSelectionActivity.class);
 		startActivity(intent);
-        /*Intent intent = new Intent(this, SignUpActivity.class);
-        startActivity(intent);*/
+        //Intent intent = new Intent(this, SignUpActivity.class);
+        //startActivity(intent);
 	}
-	
+
 	private void sendPasswordRecoveryEmail() {
 		RecoverPasswordDialogFragment recoverPasswordDialogFragment = new RecoverPasswordDialogFragment();
 		recoverPasswordDialogFragment.setCancelable(false);
@@ -389,5 +391,5 @@ public class LoginActivity extends AppCompatActivity implements OnPasswordResetL
 			}
 		});
 		
-	}
+	}*/
 }

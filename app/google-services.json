@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "886210210258",
+    "firebase_url": "https://udemya-jl-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "udemya-jl",
+    "storage_bucket": "udemya-jl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886210210258:android:00e183fff4856fe27f400b",
+        "android_client_info": {
+          "package_name": "com.jollylemming.kidsafe01"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXac3ym6moCPqJbWaKw3fimUHKflejgfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886210210258:android:81a118accf1493b67f400b",
+        "android_client_info": {
+          "package_name": "com.jollylemming.udemya65"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXac3ym6moCPqJbWaKw3fimUHKflejgfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
